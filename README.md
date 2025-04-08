@@ -97,4 +97,17 @@ Exemplo de Uso:
      
      
     Pressione ENTER quando solicitado para reiniciar a máquina remota.
+
+Observações Importantes
+
+🔹 Permissões: Certifique-se de que o usuário SSH tenha permissão para executar reboot/shutdown (geralmente requer sudo).
+🔹 Chave SSH: Prefira autenticação por chave em vez de senha (mais seguro).
+🔹 Logs: Se quiser registrar os resultados em um arquivo, adicione with open('log.txt', 'a') as f: f.write(...).
+🔹 Alternativa sem Python: Se preferir, use pssh (Parallel SSH) para um comando direto:
+bash
+Copy
+
+pssh -H "user@host1 user@host2" -i "sudo reboot"
+
+Quer algum ajuste? Posso adaptar o script conforme sua necessidade! 🚀
      
