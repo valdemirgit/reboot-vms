@@ -25,12 +25,7 @@ import sys
 def reiniciar_maquina_remota(hostname, port, username, password):
     """
     Função para reiniciar uma máquina remota via SSH.
-    
-    :param hostname: Endereço IP ou nome da máquina remota.
-    :param port: Porta SSH (geralmente 22).
-    :param username: Nome de usuário para autenticação SSH.
-    :param password: Senha do usuário (ou use chave privada).
-    """
+
     try:
         # Criar uma instância do cliente SSH
         ssh_client = paramiko.SSHClient()
